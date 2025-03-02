@@ -66,17 +66,17 @@ export interface ResumeData {
 }
 
 const resumeData: ResumeData = {
-  name: "John Doe",
-  title: "Senior Frontend Developer",
+  name: "Pelle Johnsen",
+  title: "Seasoned Software Engineer and Technical Leader",
   bio: "Passionate frontend developer with 8+ years of experience building responsive, accessible, and performant web applications. Specialized in React, TypeScript, and modern frontend architecture. Committed to creating exceptional user experiences through clean code and innovative solutions.",
   contact: {
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, CA",
-    linkedin: "https://linkedin.com/in/johndoe",
-    github: "https://github.com/johndoe",
+    email: "pelle.johnsen@gmail.com",
+    phone: "+45 *** *** ***",
+    location: "Copenhagen, Denmark",
+    linkedin: "https://linkedin.com/in/pellej",
+    github: "https://github.com/pjoe",
     twitter: "https://twitter.com/johndoe",
-    website: "https://johndoe.dev",
+    website: "https://pjoe.github.io",
   },
   availability: {
     status: "Full-time employed",
@@ -101,7 +101,8 @@ const resumeData: ResumeData = {
     { name: "Communication", level: 4, category: "soft" },
     { name: "Team Leadership", level: 4, category: "soft" },
     { name: "English", level: 5, category: "language" },
-    { name: "Spanish", level: 3, category: "language" },
+    { name: "Danish", level: 5, category: "language" },
+    { name: "Chinese", level: 1, category: "language" },
   ],
   experience: [
     {
