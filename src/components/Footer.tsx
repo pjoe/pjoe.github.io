@@ -12,8 +12,8 @@ const Footer = () => {
   
   const currentYear = new Date().getFullYear();
   
-  // Get initials from name
-  const initials = resumeData.name.split(' ').map(n => n[0]).join('');
+  // Custom initials - using PJOE instead of dynamically generated initials
+  const initials = "PJOE";
   
   return (
     <footer className="bg-background-dark border-t border-gray-800 py-12 relative">

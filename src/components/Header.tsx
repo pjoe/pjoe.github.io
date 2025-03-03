@@ -51,8 +51,8 @@ const Header = () => {
     }
   };
 
-  // Get initials from name
-  const initials = resumeData.name.split(' ').map(n => n[0]).join('');
+  // Custom initials - using PJOE instead of dynamically generated initials
+  const initials = "PJOE";
 
   return (
     <motion.header 
