@@ -58,7 +58,7 @@ const Hero = () => {
               </motion.a>
               
               <motion.a 
-                href="/resume.pdf" 
+                href="/Pelle_Johnsen_CV.pdf" 
                 className="btn btn-outline flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -138,14 +138,14 @@ const Hero = () => {
                 <div className="text-text-secondary text-xs">Years Exp.</div>
               </motion.div>
               
-              <motion.div 
+              {/* <motion.div 
                 className="absolute -bottom-4 -left-4 bg-background-light p-3 rounded-lg shadow-lg glow"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 0.5 }}
               >
                 <div className="text-accent-primary font-bold text-xl">50+</div>
                 <div className="text-text-secondary text-xs">Projects</div>
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </div>

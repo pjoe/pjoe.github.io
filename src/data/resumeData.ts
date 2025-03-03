@@ -70,7 +70,7 @@ export interface ResumeData {
 const resumeData: ResumeData = {
   name: "Pelle Johnsen",
   title: "Seasoned Software Developer and Architect",
-  profileImage: "",
+  profileImage: "/pelle_profile.jpg",
   summary: "Seasoned Software Engineer, 3D Artist and technology focused Leader",
   bio: "Software Developer and Architect with over 27 years of experience, specializing in systems ranging from resource-constrained embedded devices to scalable cloud-based distributed servers. Proficient in 3D Graphics with 17 years of experience, including lighting, VFX, and character rigging. Passionate about delivering efficient, reliable, and innovative technological solutions.",
   contact: {
