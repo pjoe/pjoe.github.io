@@ -67,191 +67,319 @@ export interface ResumeData {
 
 const resumeData: ResumeData = {
   name: "Pelle Johnsen",
-  title: "Seasoned Software Engineer and Technical Leader",
-  bio: "Passionate frontend developer with 8+ years of experience building responsive, accessible, and performant web applications. Specialized in React, TypeScript, and modern frontend architecture. Committed to creating exceptional user experiences through clean code and innovative solutions.",
+  title: "Seasoned Software Developer and Architect",
+  bio: "Software Developer and Architect with over 27 years of experience, specializing in systems ranging from resource-constrained embedded devices to scalable cloud-based distributed servers. Proficient in 3D Graphics with 17 years of experience, including lighting, VFX, and character rigging. Passionate about delivering efficient, reliable, and innovative technological solutions.",
   contact: {
     email: "pelle.johnsen@gmail.com",
-    phone: "+45 *** *** ***",
-    location: "Copenhagen, Denmark",
+    phone: "+45 27141525",
+    location: "Denmark",
     linkedin: "https://linkedin.com/in/pellej",
     github: "https://github.com/pjoe",
-    twitter: "https://twitter.com/johndoe",
-    website: "https://pjoe.github.io",
   },
   availability: {
-    status: "Full-time employed",
-    looking: true,
+    status: "CTO at Skybox.gg",
+    looking: false,
   },
   skills: [
-    { name: "React", level: 5, category: "technical" },
     { name: "TypeScript", level: 5, category: "technical" },
+    { name: "Rust", level: 4, category: "technical" },
+    { name: "Python", level: 4, category: "technical" },
+    { name: "C++", level: 5, category: "technical" },
+    { name: "C#", level: 4, category: "technical" },
+    { name: "Go", level: 3, category: "technical" },
     { name: "JavaScript", level: 5, category: "technical" },
-    { name: "HTML/CSS", level: 5, category: "technical" },
-    { name: "Tailwind CSS", level: 4, category: "technical" },
-    { name: "Redux/Zustand", level: 4, category: "technical" },
-    { name: "Next.js", level: 4, category: "technical" },
-    { name: "GraphQL", level: 3, category: "technical" },
-    { name: "Node.js", level: 3, category: "technical" },
-    { name: "Jest/Testing Library", level: 4, category: "technical" },
-    { name: "Webpack/Vite", level: 4, category: "technical" },
-    { name: "Git/GitHub", level: 4, category: "technical" },
-    { name: "CI/CD", level: 3, category: "technical" },
-    { name: "Agile/Scrum", level: 4, category: "soft" },
+    { name: "Java", level: 3, category: "technical" },
+    { name: "AWS Services", level: 5, category: "technical" },
+    { name: "Docker", level: 5, category: "technical" },
+    { name: "Kubernetes", level: 4, category: "technical" },
+    { name: "WebGL", level: 4, category: "technical" },
+    { name: "Unreal Engine 5", level: 4, category: "technical" },
+    { name: "Babylon.js", level: 4, category: "technical" },
+    { name: "OpenGL ES", level: 4, category: "technical" },
+    { name: "Qt/QML", level: 4, category: "technical" },
+    { name: "Pulumi", level: 5, category: "technical" },
+    { name: "GitHub Actions", level: 5, category: "technical" },
+    { name: "CI/CD", level: 5, category: "technical" },
+    { name: "Terraform", level: 4, category: "technical" },
+    { name: "React", level: 4, category: "technical" },
+    { name: "Node.js", level: 4, category: "technical" },
+    { name: "Django", level: 3, category: "technical" },
+    { name: "3D Graphics", level: 5, category: "technical" },
+    { name: "Team Leadership", level: 5, category: "soft" },
+    { name: "Architecture", level: 5, category: "soft" },
     { name: "Problem Solving", level: 5, category: "soft" },
     { name: "Communication", level: 4, category: "soft" },
-    { name: "Team Leadership", level: 4, category: "soft" },
-    { name: "English", level: 5, category: "language" },
     { name: "Danish", level: 5, category: "language" },
+    { name: "English", level: 5, category: "language" },
+    { name: "German", level: 2, category: "language" },
     { name: "Chinese", level: 1, category: "language" },
   ],
   experience: [
     {
-      title: "Senior Frontend Developer",
-      company: "TechCorp Inc.",
-      location: "San Francisco, CA",
-      period: "Jan 2020 - Present",
+      title: "CTO",
+      company: "Skybox.gg",
+      location: "Denmark",
+      period: "January 2023 - Present",
       description: [
-        "Lead a team of 5 frontend developers in building and maintaining a complex SaaS platform with 100k+ monthly active users",
-        "Architected and implemented a component library using React, TypeScript, and Tailwind CSS, reducing development time by 40%",
-        "Optimized application performance, improving load times by 60% and achieving a 95+ Lighthouse score",
-        "Implemented comprehensive testing strategy with Jest and Testing Library, achieving 90%+ code coverage",
+        "Migrated the main eSports analytics infrastructure to AWS with a multi-account setup and implemented DevOps practices using Pulumi",
+        "Developed a CS:GO 3D replay tool for broadcasting using Unreal Engine 5 with Lumen and real-time ray tracing",
+        "Built a fan engagement multiplayer casual game prototype using Babylon.js and PWA for mobile",
+        "Enhanced recruitment, employee evaluation, and career development processes",
+        "Managed development team leads and individual developers"
       ],
       technologies: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Redux",
-        "Jest",
-        "Webpack",
+        "AWS",
+        "Pulumi",
+        "Unreal Engine 5",
+        "Babylon.js",
+        "DevOps",
+        "PWA"
       ],
     },
     {
-      title: "Frontend Developer",
-      company: "WebSolutions LLC",
-      location: "Seattle, WA",
-      period: "Mar 2017 - Dec 2019",
+      title: "Senior Solution Architect",
+      company: "Amazon Web Services",
+      location: "Denmark",
+      period: "March 2021 - December 2022",
       description: [
-        "Developed responsive web applications for clients across various industries",
-        "Migrated legacy jQuery codebase to modern React architecture",
-        "Collaborated with UX designers to implement pixel-perfect interfaces",
-        "Mentored junior developers and conducted code reviews",
+        "Advised startup clients on cloud architecture, focusing on security, reliability, cost optimization, and performance",
+        "Demonstrated solutions to address customer challenges using AWS services like CDK (IaC), ECS, EKS, CloudFront, API Gateway, RDS, Aurora, and SageMaker",
+        "Specialized in serverless technologies, containerization, databases, analytics, and AI/ML"
       ],
-      technologies: ["React", "JavaScript", "SCSS", "Redux", "REST APIs"],
+      technologies: [
+        "AWS",
+        "CDK",
+        "ECS",
+        "EKS",
+        "CloudFront",
+        "API Gateway",
+        "RDS",
+        "Aurora",
+        "SageMaker",
+        "Serverless",
+        "Containerization"
+      ],
     },
     {
-      title: "Junior Web Developer",
-      company: "Digital Creations",
-      location: "Portland, OR",
-      period: "Jun 2015 - Feb 2017",
+      title: "Chief Software Architect",
+      company: "TIMEmSYSTEM",
+      location: "Denmark",
+      period: "February 2020 - March 2021",
       description: [
-        "Built and maintained websites for small to medium-sized businesses",
-        "Implemented responsive designs using HTML, CSS, and JavaScript",
-        "Collaborated with the design team to ensure consistent brand identity",
-        "Optimized websites for SEO and performance",
+        "Improved product quality and development efficiency by introducing GitHub-based workflows and code reviews",
+        "Implemented CI/CD pipelines using GitHub Actions and automated deployment processes",
+        "Designed new architecture leveraging Kubernetes on Azure with infrastructure as code via Pulumi",
+        "Mentored the team in new technologies and streamlined release planning",
+        "Led development and operations teams"
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"],
+      technologies: [
+        "GitHub",
+        "CI/CD",
+        "GitHub Actions",
+        "Kubernetes",
+        "Azure",
+        "Pulumi"
+      ],
     },
+    {
+      title: "CTO",
+      company: "BRAND3D",
+      location: "Denmark",
+      period: "January 2018 - January 2020",
+      description: [
+        "Led technical development for real-time 3D browser experiences",
+        "Oversaw front-end and back-end development, cloud server infrastructure, and CI/CD processes",
+        "Architected new applications and managed DevOps engineering",
+        "Acted as the technical liaison for customer relations"
+      ],
+      technologies: [
+        "3D",
+        "WebGL",
+        "Cloud Infrastructure",
+        "CI/CD",
+        "DevOps"
+      ],
+    },
+    {
+      title: "VP of 3D Technology",
+      company: "GlobalScanning",
+      location: "Denmark",
+      period: "July 2016 - January 2018",
+      description: [
+        "Advanced 3D scanning technologies and cloud services",
+        "Continued development of p3d.in, enhancing core components and server infrastructure",
+        "Established server tooling, workflows, and CI/CD pipelines",
+        "Initiated a new 2D imaging cloud project using Kubernetes, Django, and Ember.js",
+        "Recruited developers and DevOps engineers"
+      ],
+      technologies: [
+        "3D Scanning",
+        "Cloud Services",
+        "CI/CD",
+        "Kubernetes",
+        "Django",
+        "Ember.js"
+      ],
+    },
+    {
+      title: "Software Lead",
+      company: "BLUETOWN",
+      location: "Denmark",
+      period: "July 2015 - July 2016",
+      description: [
+        "Developed scalable backend and frontend solutions for millions of end-users",
+        "Designed customer signup and billing systems for WiFi and VoIP services",
+        "Configured networking setups including routers, captive portals, RADIUS, and VLANs",
+        "Explored backbone connectivity over VSAT technology"
+      ],
+      technologies: [
+        "Backend Development",
+        "Frontend Development",
+        "Networking",
+        "RADIUS",
+        "VLANs",
+        "VSAT"
+      ],
+    },
+    {
+      title: "Core Developer and Architect",
+      company: "p3d.in",
+      location: "Denmark",
+      period: "September 2011 - January 2020",
+      description: [
+        "Developed both frontend and backend for p3d.in, enhancing the online 3D model sharing platform",
+        "Transitioned backend infrastructure to Docker and Kubernetes",
+        "Migrated frontend technologies from jQuery to Ember.js"
+      ],
+      technologies: [
+        "3D",
+        "WebGL",
+        "Docker",
+        "Kubernetes",
+        "jQuery",
+        "Ember.js"
+      ],
+    },
+    {
+      title: "Consultant",
+      company: "Laerdal Medical",
+      location: "Denmark",
+      period: "2011 - 2015",
+      description: [
+        "Developed software for embedded Linux platforms using Qt/QML",
+        "Optimized UI performance",
+        "Implemented automated testing"
+      ],
+      technologies: [
+        "Embedded Linux",
+        "Qt/QML",
+        "UI Optimization",
+        "Automated Testing"
+      ],
+    },
+    {
+      title: "Co-Founder & CTO",
+      company: "SoftMobile",
+      location: "Denmark",
+      period: "2008 - 2011",
+      description: [
+        "Developed vertical applications with mobile clients for location-based services using J2ME, Python, and Django"
+      ],
+      technologies: [
+        "J2ME",
+        "Python",
+        "Django",
+        "Location-based Services",
+        "Mobile Development"
+      ],
+    },
+    {
+      title: "Software Developer",
+      company: "Mozilla Corporation",
+      location: "Remote",
+      period: "March 2008 - September 2008",
+      description: [
+        "Developed new C++ APIs for embedding Firefox in other applications, with support for Qt on Windows, Linux, and Maemo"
+      ],
+      technologies: [
+        "C++",
+        "Firefox",
+        "Qt",
+        "Windows",
+        "Linux",
+        "Maemo"
+      ],
+    }
   ],
   education: [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      period: "2013 - 2015",
-      description:
-        "Specialized in Human-Computer Interaction and Web Technologies",
-      achievements: [
-        "Graduated with honors (GPA: 3.9/4.0)",
-        "Published research paper on UI optimization techniques",
-        "Teaching Assistant for Web Development course",
-      ],
+      degree: "B.Sc.E.E in Electronics/Computer Science",
+      institution: "Engineering Academy of Denmark",
+      location: "Denmark",
+      period: "1992 - 1995",
+      description: "Thesis: Object-Oriented Programming using C for Mobile Phones"
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Washington",
-      location: "Seattle, WA",
-      period: "2009 - 2013",
-      description: "Minor in User Experience Design",
-      achievements: [
-        "Dean's List all semesters",
-        "Led student web development club",
-        "Completed capstone project with local tech company",
-      ],
-    },
+      degree: "Digital Artist Program",
+      institution: "Truemax Academy",
+      location: "Denmark",
+      period: "2005 - 2006",
+      description: "Focus on 3D Graphics using 3D Studio Max, Maya, ZBrush, and Photoshop; skills in modeling, texturing, rigging, animation, lighting, and rendering"
+    }
   ],
   certifications: [
     {
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "2022",
-      description:
-        "Expertise in developing, deploying, and debugging cloud-based applications using AWS",
-      skills: ["AWS Lambda", "S3", "DynamoDB", "API Gateway"],
-      url: "https://www.credly.com/badges/example",
+      title: "Object-Oriented Analysis and Design for Embedded Systems",
+      issuer: "Professional Training",
+      description: "Advanced techniques for designing embedded systems using object-oriented principles"
     },
     {
-      title: "Professional Scrum Master I",
-      issuer: "Scrum.org",
-      date: "2021",
-      description:
-        "Certified in facilitating Scrum processes and supporting teams in Agile development",
-      skills: ["Agile", "Scrum", "Sprint Planning", "Retrospectives"],
-      url: "https://www.scrum.org/certificates/example",
+      title: "Project Planning and Management",
+      issuer: "Professional Training",
+      description: "Methodologies and best practices for effective project management"
     },
     {
-      title: "React Advanced Patterns",
-      issuer: "Frontend Masters",
-      date: "2020",
-      description:
-        "Mastery of advanced React patterns and performance optimization techniques",
-      skills: ["React Hooks", "Context API", "Code Splitting", "Memoization"],
-      url: "https://frontendmasters.com/certificates/example",
+      title: "NVIDIA Fundamentals of Deep Learning",
+      issuer: "NVIDIA",
+      description: "Core concepts and applications of deep learning technologies"
     },
+    {
+      title: "W3C WebGPU Community Working Group",
+      issuer: "W3C",
+      date: "2020 - 2021",
+      description: "Contributed to the development of WebGPU, a cross-platform standard for GPU power in browsers and native apps"
+    }
   ],
   projects: [
     {
-      category: "Web",
-      title: "E-commerce Platform",
-      description:
-        "A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment processing.",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe API"],
-      image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      link: "https://ecommerce-project.example.com",
-      github: "https://github.com/johndoe/ecommerce-platform",
+      category: "Open Source",
+      title: "Loadem",
+      description: "A command-line tool for load testing web applications written in Rust",
+      technologies: ["Rust", "CLI", "Web Testing"],
+      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      github: "https://github.com/pjoe/loadem"
     },
     {
-      category: "Tool",
-      title: "Task Management App",
-      description:
-        "A Kanban-style task management application with drag-and-drop functionality, user collaboration, and real-time updates.",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      link: "https://task-app.example.com",
-      github: "https://github.com/johndoe/task-management",
+      category: "Open Source",
+      title: "Naga Contributor",
+      description: "Universal shader translator in Rust - contributed to this open source project",
+      technologies: ["Rust", "Shaders", "Graphics Programming"],
+      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      category: "Web",
-      title: "Weather Dashboard",
-      description:
-        "A weather dashboard that displays current conditions and forecasts for multiple locations, with data visualization and alerts.",
-      technologies: ["React", "JavaScript", "Chart.js", "Weather API"],
-      image:
-        "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      link: "https://weather-dashboard.example.com",
-      github: "https://github.com/johndoe/weather-dashboard",
+      category: "3D",
+      title: "CS:GO 3D Replay Tool",
+      description: "A 3D replay tool for broadcasting CS:GO matches using Unreal Engine 5 with Lumen and real-time ray tracing",
+      technologies: ["Unreal Engine 5", "Lumen", "Ray Tracing", "3D Graphics", "eSports"],
+      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
     },
     {
       category: "Web",
-      title: "Portfolio Website",
-      description:
-        "A personal portfolio website showcasing projects and skills, with a custom design and animations.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      image:
-        "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
-      github: "https://github.com/johndoe/portfolio",
-    },
+      title: "Fan Engagement Game",
+      description: "A multiplayer casual game prototype for fan engagement using Babylon.js and PWA for mobile",
+      technologies: ["Babylon.js", "PWA", "Multiplayer", "WebGL", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+    }
   ],
 };
 
