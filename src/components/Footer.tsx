@@ -12,6 +12,9 @@ const Footer = () => {
   
   const currentYear = new Date().getFullYear();
   
+  // Get initials from name
+  const initials = resumeData.name.split(' ').map(n => n[0]).join('');
+  
   return (
     <footer className="bg-background-dark border-t border-gray-800 py-12 relative">
       <div className="section-container">
@@ -23,8 +26,8 @@ const Footer = () => {
               whileTap={{ scale: 0.95 }}
             >
               <a href="#home" className="flex items-center gap-2">
-                <span className="text-accent-primary">JD</span>
-                <span>John Doe</span>
+                <span className="text-accent-primary">{initials}</span>
+                <span>{resumeData.name}</span>
               </a>
             </motion.div>
             

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useNavigationStore } from '../store';
+import resumeData from '../data/resumeData';
 
 const navItems = [
   { id: 'home', label: 'Home' },
@@ -50,6 +51,9 @@ const Header = () => {
     }
   };
 
+  // Get initials from name
+  const initials = resumeData.name.split(' ').map(n => n[0]).join('');
+
   return (
     <motion.header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -69,8 +73,8 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
           >
             <a href="#home" className="flex items-center gap-2">
-              <span className="text-accent-primary">JD</span>
-              <span className="hidden sm:inline">John Doe</span>
+              <span className="text-accent-primary">{initials}</span>
+              <span className="hidden sm:inline">{resumeData.name}</span>
             </a>
           </motion.div>
           

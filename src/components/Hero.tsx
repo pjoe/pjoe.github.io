@@ -4,7 +4,7 @@ import resumeData from '../data/resumeData';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center pt-16">
+    <section className="min-h-screen flex items-center pt-16" id="home">
       <div className="section-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -32,7 +32,7 @@ const Hero = () => {
                 {resumeData.name.split(' ')[0]}
               </span>
               <br />
-              {resumeData.headline}
+              {resumeData.headline || resumeData.title}
             </motion.h1>
             
             <motion.p 
@@ -41,7 +41,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.8 }}
             >
-              {resumeData.summary}
+              {resumeData.summary || resumeData.bio.substring(0, 150) + "..."}
             </motion.p>
             
             <motion.div 
@@ -136,7 +136,7 @@ const Hero = () => {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
               >
-                <div className="text-accent-primary font-bold text-xl">5+</div>
+                <div className="text-accent-primary font-bold text-xl">27+</div>
                 <div className="text-text-secondary text-xs">Years Exp.</div>
               </motion.div>
               
