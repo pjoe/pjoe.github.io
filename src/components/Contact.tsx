@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Send, Github, Linkedin, ExternalLink } from 'lucide-react';
 import resumeData from '../data/resumeData';
@@ -52,6 +51,7 @@ const Contact = () => {
                 </div>
               </div>
               
+              {resumeData.contact.phone && (
               <div className="flex items-start gap-4">
                 <div className="bg-background-light p-3 rounded-md">
                   <Phone size={20} className="text-accent-primary" />
@@ -66,6 +66,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
+              )}
               
               <div className="flex items-start gap-4">
                 <div className="bg-background-light p-3 rounded-md">
