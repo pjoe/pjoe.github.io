@@ -75,7 +75,7 @@ const resumeData: ResumeData = {
   bio: "Software Developer and Architect with over 27 years of experience, specializing in systems ranging from resource-constrained embedded devices to scalable cloud-based distributed servers. Proficient in 3D Graphics with 17 years of experience, including lighting, VFX, and character rigging. Passionate about delivering efficient, reliable, and innovative technological solutions.",
   contact: {
     email: "pelle.johnsen@gmail.com",
-    phone: "+45 27141525",
+    phone: "",
     location: "Copenhagen, Denmark",
     linkedin: "https://linkedin.com/in/pellej",
     github: "https://github.com/pjoe",
@@ -376,24 +376,27 @@ const resumeData: ResumeData = {
     {
       category: "Open Source",
       title: "Naga Contributor",
-      description: "Universal shader translator in Rust - contributed to this open source project",
+      description: "Universal shader translator in Rust - contributor",
       technologies: ["Rust", "Shaders", "Graphics Programming"],
-      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      github: "https://github.com/gfx-rs/naga"
     },
     {
       category: "3D",
-      title: "CS:GO 3D Replay Tool",
-      description: "A 3D replay tool for broadcasting CS:GO matches using Unreal Engine 5 with Lumen and real-time ray tracing",
-      technologies: ["Unreal Engine 5", "Lumen", "Ray Tracing", "3D Graphics", "eSports"],
-      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      title: "p3d.in",
+      description: "Your 3D online - core developer",
+      technologies: ["TypeScript", "WebGL", "Graphics Programming", "AWS", "Python"],
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      link: "https://p3d.in"
     },
     {
-      category: "Web",
-      title: "Fan Engagement Game",
-      description: "A multiplayer casual game prototype for fan engagement using Babylon.js and PWA for mobile",
-      technologies: ["Babylon.js", "PWA", "Multiplayer", "WebGL", "JavaScript"],
-      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-    }
+      category: "eSports",
+      title: "Skybox EDGE",
+      description: "CounterStrike Analytics - CTO",
+      technologies: ["TypeScript", "AWS", "DevOps", "Analytics", "Infrastructure"],
+      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      link: "https://skybox.gg/edge"
+    },
   ],
 };
 

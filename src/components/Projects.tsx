@@ -156,7 +156,7 @@ const Projects = () => {
                   </div>
 
                   <motion.a
-                    href={project.demo || project.github || "#"}
+                    href={project.link || project.github || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium text-accent-primary flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity"

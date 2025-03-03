@@ -65,6 +65,7 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-4 text-text-primary">Personal Information</h3>
             
             <div className="space-y-4">
+              {resumeData.contact.phone && (
               <div className="flex items-start gap-4">
                 <div className="bg-background-light p-3 rounded-md">
                   <Phone size={20} className="text-accent-primary" />
@@ -74,6 +75,7 @@ const About = () => {
                   <p className="text-text-secondary">{resumeData.contact.phone}</p>
                 </div>
               </div>
+              )}
               
               <div className="flex items-start gap-4">
                 <div className="bg-background-light p-3 rounded-md">
@@ -81,7 +83,14 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-text-primary">Email</h4>
-                  <p className="text-text-secondary">{resumeData.contact.email}</p>
+                  <a 
+                      href={"mailto:" + resumeData.contact.email} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-text-secondary hover:text-accent-primary transition-colors"
+                    >
+                      {resumeData.contact.email}
+                    </a>
                 </div>
               </div>
               
