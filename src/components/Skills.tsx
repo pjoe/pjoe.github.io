@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import resumeData from "../data/resumeData";
+import resumeData, { Skill } from "../data/resumeData";
 
 const Skills = () => {
   // Group skills by category
-  const skillsByCategory = resumeData.skills.reduce((acc, skill) => {
+  const skillsByCategory = resumeData.skills.reduce<Record<string, Skill[]>>((acc, skill) => {
     if (!acc[skill.category]) {
       acc[skill.category] = [];
     }
@@ -130,13 +130,13 @@ const Skills = () => {
               >
                 <div className="flex justify-between mb-2">
                   <span className="font-medium">{skill.name}</span>
-                  <span className="text-accent-primary">{skill.level}%</span>
+                  <span className="text-accent-primary">{skill.level * 20}%</span>
                 </div>
                 <div className="h-2 w-full bg-background-dark rounded-full overflow-hidden">
                   <motion.div
                     className="h-full bg-accent-primary rounded-full"
                     initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
+                    whileInView={{ width: `${skill.level * 20}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.2 }}
                   />

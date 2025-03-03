@@ -31,8 +31,6 @@ const Hero = () => {
               <span className="text-accent-primary">
                 {resumeData.name.split(' ')[0]}
               </span>
-              <br />
-              {resumeData.headline || resumeData.title}
             </motion.h1>
             
             <motion.p 

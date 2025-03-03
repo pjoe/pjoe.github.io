@@ -54,7 +54,7 @@ const Experience = () => {
                   {/* Content */}
                   <div
                     className={`md:w-1/2 pl-8 md:pl-0 ${
-                      index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
+                      index % 2 === 0 ? "md:pr-12" : "md:pl-12"
                     }`}
                   >
                     <div className="card bg-background-light border border-gray-800">

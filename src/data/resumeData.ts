@@ -1,7 +1,7 @@
 export interface Skill {
   name: string;
   level: number; // 1-5
-  category: "technical" | "soft" | "language";
+  category: "technical" | "soft" | "tools" | "language";
 }
 
 export interface Experience {
@@ -44,6 +44,8 @@ export interface Project {
 export interface ResumeData {
   name: string;
   title: string;
+  profileImage: string;
+  summary: string;
   bio: string;
   contact: {
     email: string;
@@ -68,11 +70,13 @@ export interface ResumeData {
 const resumeData: ResumeData = {
   name: "Pelle Johnsen",
   title: "Seasoned Software Developer and Architect",
+  profileImage: "",
+  summary: "Seasoned Software Engineer, 3D Artist and technology focused Leader",
   bio: "Software Developer and Architect with over 27 years of experience, specializing in systems ranging from resource-constrained embedded devices to scalable cloud-based distributed servers. Proficient in 3D Graphics with 17 years of experience, including lighting, VFX, and character rigging. Passionate about delivering efficient, reliable, and innovative technological solutions.",
   contact: {
     email: "pelle.johnsen@gmail.com",
     phone: "+45 27141525",
-    location: "Denmark",
+    location: "Copenhagen, Denmark",
     linkedin: "https://linkedin.com/in/pellej",
     github: "https://github.com/pjoe",
   },
@@ -81,34 +85,38 @@ const resumeData: ResumeData = {
     looking: false,
   },
   skills: [
+    // tech
     { name: "TypeScript", level: 5, category: "technical" },
     { name: "Rust", level: 4, category: "technical" },
     { name: "Python", level: 4, category: "technical" },
     { name: "C++", level: 5, category: "technical" },
     { name: "C#", level: 4, category: "technical" },
-    { name: "Go", level: 3, category: "technical" },
-    { name: "JavaScript", level: 5, category: "technical" },
-    { name: "Java", level: 3, category: "technical" },
+    { name: "React", level: 5, category: "technical" },
     { name: "AWS Services", level: 5, category: "technical" },
-    { name: "Docker", level: 5, category: "technical" },
-    { name: "Kubernetes", level: 4, category: "technical" },
-    { name: "WebGL", level: 4, category: "technical" },
-    { name: "Unreal Engine 5", level: 4, category: "technical" },
-    { name: "Babylon.js", level: 4, category: "technical" },
-    { name: "OpenGL ES", level: 4, category: "technical" },
-    { name: "Qt/QML", level: 4, category: "technical" },
-    { name: "Pulumi", level: 5, category: "technical" },
-    { name: "GitHub Actions", level: 5, category: "technical" },
+    { name: "Pulumi IaC", level: 5, category: "technical" },
     { name: "CI/CD", level: 5, category: "technical" },
-    { name: "Terraform", level: 4, category: "technical" },
-    { name: "React", level: 4, category: "technical" },
-    { name: "Node.js", level: 4, category: "technical" },
-    { name: "Django", level: 3, category: "technical" },
+    { name: "Docker", level: 5, category: "technical" },
+    { name: "Kubernetes", level: 3, category: "technical" },
     { name: "3D Graphics", level: 5, category: "technical" },
+    { name: "OpenGL", level: 4, category: "technical" },
+    { name: "WebGL", level: 5, category: "technical" },
+    { name: "glTF", level: 5, category: "technical" },
+    { name: "Babylon.js", level: 5, category: "technical" },
+    { name: "Unreal Engine 5", level: 4, category: "technical" },
+    // soft
     { name: "Team Leadership", level: 5, category: "soft" },
+    { name: "Hiring and Recruitment", level: 4, category: "soft" },
+    { name: "Mentoring and Knowledge Sharing", level: 4, category: "soft" },
     { name: "Architecture", level: 5, category: "soft" },
     { name: "Problem Solving", level: 5, category: "soft" },
-    { name: "Communication", level: 4, category: "soft" },
+    // tools
+    { name: "git, GitHub", level: 5, category: "tools" },
+    { name: "VSCode", level: 5, category: "tools" },
+    { name: "Blender 3D", level: 4, category: "tools" },
+    { name: "Maya", level: 3, category: "tools" },
+    { name: "Krita", level: 4, category: "tools" },
+    { name: "ComfyUI", level: 4, category: "tools" },
+    // language
     { name: "Danish", level: 5, category: "language" },
     { name: "English", level: 5, category: "language" },
     { name: "German", level: 2, category: "language" },
@@ -329,14 +337,10 @@ const resumeData: ResumeData = {
   ],
   certifications: [
     {
-      title: "Object-Oriented Analysis and Design for Embedded Systems",
-      issuer: "Professional Training",
-      description: "Advanced techniques for designing embedded systems using object-oriented principles"
-    },
-    {
-      title: "Project Planning and Management",
-      issuer: "Professional Training",
-      description: "Methodologies and best practices for effective project management"
+      title: "AWS Certified Solutions Architect – Professional",
+      issuer: "AWS",
+      date: "2021",
+      description: "Advanced technical skills and experience in designing distributed applications and systems on the AWS platform"
     },
     {
       title: "NVIDIA Fundamentals of Deep Learning",
@@ -348,7 +352,17 @@ const resumeData: ResumeData = {
       issuer: "W3C",
       date: "2020 - 2021",
       description: "Contributed to the development of WebGPU, a cross-platform standard for GPU power in browsers and native apps"
-    }
+    },
+    {
+      title: "Object-Oriented Analysis and Design for Embedded Systems",
+      issuer: "Professional Training",
+      description: "Advanced techniques for designing embedded systems using object-oriented principles"
+    },
+    {
+      title: "Project Planning and Management",
+      issuer: "Professional Training",
+      description: "Methodologies and best practices for effective project management"
+    },
   ],
   projects: [
     {
